@@ -28,6 +28,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+        
+      - name: Wget
+        run: wget https://raw.githubusercontent.com/wrt54g/wrt54g/main/.github/dependabot.yml
+        
+      - name: cat
+        run: cat dependabot.yml
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
