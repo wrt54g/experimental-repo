@@ -34,6 +34,8 @@ jobs:
         
       - name: cat
         run: cat dependabot.yml
+      - name: aptupdate
+        run: sudo apt-get update
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
